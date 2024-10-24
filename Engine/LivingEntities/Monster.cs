@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-	public class HealingPotion
+	public class Monster : LivingEntity
 	{
 		public int ID { get; set; }
 		public string Name { get; set; }
-		public string NamePlural { get; set; }
-		public int AmountToHeal { get; set; }
+		public int MaximumDamage { get; set; }
+		public int RewardExperiencePoints { get; set; }
+		public int RewardGold { get; set; }
 	}
 }
